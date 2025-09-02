@@ -1,3 +1,5 @@
+theme = "catppuccin_frappe"
+
 [editor]
 line-number = "relative"
 mouse = false
@@ -9,6 +11,8 @@ bufferline = "multiple"
 color-modes = true
 text-width = 100
 trim-trailing-whitespace = true
+end-of-line-diagnostics = "hint"
+
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control"]
@@ -28,3 +32,27 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+nbsp = "all"
+nnbsp = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.indent-guides]
+render = true
+character = "┆" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+other-lines = "error"
