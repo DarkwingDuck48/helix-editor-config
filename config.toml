@@ -1,0 +1,30 @@
+[editor]
+line-number = "relative"
+mouse = false
+cursorline = true
+continue-comments = true
+true-color = true
+rulers = [100, 120]
+bufferline = "multiple"
+color-modes = true
+text-width = 100
+trim-trailing-whitespace = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control"]
+center = ["file-name", "file-modification-indicator"]
+right = ["diagnostics", "selections", "total-line-numbers", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
