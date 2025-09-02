@@ -15,8 +15,8 @@ npm install -g pyright
 ```
 
 - Ruff
-Need to be installed into project virtual environment. Docs about (ruff)[https://docs.astral.sh/ruff/installation/]
+Need to be installed into project virtual environment. Docs about [ruff](https://docs.astral.sh/ruff/installation/)
 
 ## Rust
 
-Need to install (rust-analyzer)[https://rust-analyzer.github.io/book/rust_analyzer_binary.html]
+Need to install [rust-analyzer](https://rust-analyzer.github.io/book/rust_analyzer_binary.html)
