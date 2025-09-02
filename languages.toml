@@ -2,6 +2,12 @@
 name = "rust"
 language-servers = ["rust-analyzer"]
 
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[language-server.rust-analyzer.config.cargo]
+features = "all"
+
 [[language]]
 name = "python"
 language-servers = [ "pyright", "ruff" ]
