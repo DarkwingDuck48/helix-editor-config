@@ -6,8 +6,8 @@ mouse = false
 cursorline = true
 continue-comments = true
 true-color = true
-rulers = [100, 120]
 bufferline = "multiple"
+rulers = [100, 120]
 color-modes = true
 text-width = 100
 trim-trailing-whitespace = true
@@ -62,7 +62,7 @@ other-lines = "error"
 [keys.normal]
 C-s = ":w" # Maps Ctrl-s to the typable command :w which is an alias for :write (save file)
 g = { a = "code_action" } # Maps `ga` to show possible code actions
-"space" = { "]" = "jump_view_right", "[" = "jump_view_left"}
+"space" = { "]" = ":bn", "[" = ":bp"}
 "ret" = ["open_below", "normal_mode"] # Maps the enter key to open_below then re-enter normal mode
 "A-x" = "@x<A-d>" # Maps Alt-x to a macro selecting the whole line and deleting it without yanking it
 
