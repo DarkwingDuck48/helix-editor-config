@@ -65,6 +65,17 @@ g = { a = "code_action" } # Maps `ga` to show possible code actions
 "space" = { "]" = ":bn", "[" = ":bp", "|"=":vs"}
 "ret" = ["open_below", "normal_mode"] # Maps the enter key to open_below then re-enter normal mode
 "A-x" = "@x<A-d>" # Maps Alt-x to a macro selecting the whole line and deleting it without yanking it
+"C-h"= "jump_view_left"
+"C-l"  = "jump_view_right"
+"C-k" = "jump_view_up"
+"C-j" = "jump_view_down"
+
 
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+
+[keys.select]
+"C-h"= "jump_view_left"
+"C-l"  = "jump_view_right"
+"C-k" = "jump_view_up"
+"C-j" = "jump_view_down"
