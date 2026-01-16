@@ -62,7 +62,7 @@ other-lines = "error"
 [keys.normal]
 C-s = ":w" # Maps Ctrl-s to the typable command :w which is an alias for :write (save file)
 g = { a = "code_action" } # Maps `ga` to show possible code actions
-"space" = { "]" = ":bn", "[" = ":bp"}
+"space" = { "]" = ":bn", "[" = ":bp", "|"=":vs"}
 "ret" = ["open_below", "normal_mode"] # Maps the enter key to open_below then re-enter normal mode
 "A-x" = "@x<A-d>" # Maps Alt-x to a macro selecting the whole line and deleting it without yanking it
 
