@@ -13,7 +13,6 @@ text-width = 100
 trim-trailing-whitespace = true
 end-of-line-diagnostics = "hint"
 
-
 [editor.statusline]
 left = ["mode", "spinner", "version-control"]
 center = ["file-name", "file-modification-indicator"]
@@ -24,6 +23,10 @@ mode.insert = "INSERT"
 mode.select = "SELECT"
 diagnostics = ["warning", "error"]
 workspace-diagnostics = ["warning", "error"]
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
 
 [editor.cursor-shape]
 insert = "bar"
