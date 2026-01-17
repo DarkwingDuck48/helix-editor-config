@@ -72,6 +72,8 @@ g = { a = "code_action" } # Maps `ga` to show possible code actions
 "C-l"  = "jump_view_right"
 "C-k" = "jump_view_up"
 "C-j" = "jump_view_down"
+"C-left"= "jump_view_left"
+"C-right"  = "jump_view_right"
 
 
 [keys.insert]
@@ -82,3 +84,5 @@ j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 "C-l"  = "jump_view_right"
 "C-k" = "jump_view_up"
 "C-j" = "jump_view_down"
+"C-left"= "jump_view_left"
+"C-right"  = "jump_view_right"
