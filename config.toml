@@ -13,7 +13,6 @@ text-width = 100
 trim-trailing-whitespace = true
 end-of-line-diagnostics = "hint"
 
-
 [editor.statusline]
 left = ["mode", "spinner", "version-control"]
 center = ["file-name", "file-modification-indicator"]
@@ -24,6 +23,10 @@ mode.insert = "INSERT"
 mode.select = "SELECT"
 diagnostics = ["warning", "error"]
 workspace-diagnostics = ["warning", "error"]
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -66,10 +69,10 @@ g = { a = "code_action" } # Maps `ga` to show possible code actions
 "ret" = ["open_below", "normal_mode"] # Maps the enter key to open_below then re-enter normal mode
 "A-x" = "@x<A-d>" # Maps Alt-x to a macro selecting the whole line and deleting it without yanking it
 "C-h"= "jump_view_left"
-"C-left"= "jump_view_left"
 "C-l"  = "jump_view_right"
 "C-k" = "jump_view_up"
 "C-j" = "jump_view_down"
+"C-left"= "jump_view_left"
 "C-right"  = "jump_view_right"
 
 [keys.insert]
@@ -80,3 +83,5 @@ j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 "C-l"  = "jump_view_right"
 "C-k" = "jump_view_up"
 "C-j" = "jump_view_down"
+"C-left"= "jump_view_left"
+"C-right"  = "jump_view_right"

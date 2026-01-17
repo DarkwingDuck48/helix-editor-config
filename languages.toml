@@ -1,5 +1,6 @@
 [[language]]
 name = "rust"
+roots = ["Cargo.toml", "Cargo.lock"]
 language-servers = ["rust-analyzer"]
 
 [language-server.rust-analyzer.config.check]
@@ -16,6 +17,11 @@ roots = ["pyproject.toml"]
 comment-token = "#"
 indent = {tab-width = 4, unit= " "}
 rulers = [100, 120]
+
+
+[[grammar]]
+name = "python"
+source = { git = "https://github.com/tree-sitter/tree-sitter-python", rev = "d6210ceab11e8d812d4ab59c07c81458ec6e5184" }
 
 [language-server.pyright.config.python.analysis]
 typeCheckingMode = "basic"
