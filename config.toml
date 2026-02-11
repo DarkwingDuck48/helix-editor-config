@@ -2,7 +2,7 @@ theme = "catppuccin_frappe"
 
 [editor]
 line-number = "relative"
-mouse = false
+mouse = true
 cursorline = true
 continue-comments = true
 true-color = true
@@ -34,7 +34,7 @@ normal = "block"
 select = "underline"
 
 [editor.file-picker]
-hidden = false
+hidden = true
 
 [editor.whitespace.render]
 space = "none"
@@ -69,7 +69,9 @@ g = { a = "code_action" } # Maps `ga` to show possible code actions
 "ret" = ["open_below", "normal_mode"] # Maps the enter key to open_below then re-enter normal mode
 "A-x" = "@x<A-d>" # Maps Alt-x to a macro selecting the whole line and deleting it without yanking it
 "C-h"= "jump_view_left"
+"S-h"= "jump_view_left"
 "C-l"  = "jump_view_right"
+"S-l"  = "jump_view_right"
 "C-k" = "jump_view_up"
 "C-j" = "jump_view_down"
 "C-left"= "jump_view_left"

@@ -29,3 +29,24 @@ typeCheckingMode = "basic"
 [language-server.ruff]
 command = "ruff"
 args = ["server"]
+
+
+[[language]]
+name = "javascript"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "jsx"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+language-servers = ["typescript-language-server"]
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "javascript"
+indent = { tab-width = 2, unit = "  " }
