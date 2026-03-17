@@ -76,6 +76,11 @@ g = { a = "code_action" } # Maps `ga` to show possible code actions
 "C-j" = "jump_view_down"
 "C-left"= "jump_view_left"
 "C-right"  = "jump_view_right"
+y = { y = ["extend_to_line_bounds", "yank_to_clipboard", "goto_line_start"]}
+d = { d = ["extend_to_line_bounds", "yank_to_clipboard", "delete_selection"]}
+p = "paste_clipboard_after"
+P = "paste_clipboard_before"
+
 
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
@@ -87,3 +92,7 @@ j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 "C-j" = "jump_view_down"
 "C-left"= "jump_view_left"
 "C-right"  = "jump_view_right"
+y = "yank_to_clipboard"
+p = "paste_clipboard_after"
+P = "paste_clipboard_before"
+d = { d = ["yank_to_clipboard", "delete_selection"]}
